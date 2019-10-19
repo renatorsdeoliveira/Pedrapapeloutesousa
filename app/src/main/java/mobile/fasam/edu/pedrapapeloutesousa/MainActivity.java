@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void opcaoSelecionada(String escolhaUsuario){
         ImageView imageResultado = findViewById(R.id.imageResultado);
-       // TextView textResultado = findViewById(R.id.textResultado);
+        TextView textResultado = findViewById(R.id.textResultado);
 
         //Array que liga os numeros do array numero
         String[] opcoes = {"Pedra", "Papel", "Tesoura"};
@@ -53,7 +53,9 @@ public class MainActivity extends AppCompatActivity {
                 imageResultado.setImageResource(R.drawable.tesoura);
         }
 
-        /*String usuario, app;
+
+        //Saída do resultado de quem ganhou
+        String usuario, app;
         usuario = escolhaUsuario;
         app = escolhaApp;
 
@@ -76,6 +78,6 @@ public class MainActivity extends AppCompatActivity {
         }
         else{
             textResultado.setText("Empatamos :/");
-        }*/
+        }
     }
 }
